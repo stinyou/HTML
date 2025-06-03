@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!--Unordered list-->
+        <ul>
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ul>
+        <!--Ordered list-->
+        <ol>
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ol>
+        <!--Description list-->
+        <dl>
+            <dt>Circle</dt>
+            <dd>- round figure with a single edge</dd>
+            <dt>Square</dt>
+            <dd>- quadrilateral with all right angles and equal length sides</dd>
+            <dt>Rectangle</dt>
+            <dd>- quadrilateral with all right angles</dd>
+        </dl>
+        <!--For unordered lists use list-style-type property to modify bullet points-->
+        <ul style="list-style-type:disc;">
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ul>
+        <ul style="list-style-type:circle;">
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ul>
+        <ul style="list-style-type:square;">
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ul>
+        <ul style="list-style-type:none;">
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ul>
+        <!--Nested lists-->
+        <ul>
+            <li>Circle</li>
+            <li>Quadrilateral
+                <ul style="list-style-type:circle;">
+                    <li>Square</li>
+                    <li>Rectangle</li>
+                </ul>
+            </li>
+            <li>Triangle</li>
+        </ul>
+        <!--Can make a horizontal list using CSS (for a navigation menu), more on that later-->
+        <!--Basic horizontal list-->
+        <ul style="list-style-type:none;color:white;">
+            <li style="float:left;padding:20px;background-color:black;">Circle</li>
+            <li style="float:left;padding:20px;background-color:black;">Square</li>
+            <li style="float:left;padding:20px;background-color:black;">Rectangle</li>
+        </ul>
+        <br><br><br>
+        <!--For ordered lists use type attribute to modify numbers-->
+        <ol type="1">
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ol>
+        <ol type="A">
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ol>
+        <ol type="a">
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ol>
+        <ol type="I">
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ol>
+        <ol type="i">
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ol>
+        <!--Can use start attribute to start from a specific number-->
+        <ol start="10">
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ol>
+        <ol type="A" start="10">
+            <li>Circle</li>
+            <li>Square</li>
+            <li>Rectangle</li>
+        </ol>
+        <!--Can be nested as well-->
+        <ol type="1">
+            <li>Circle</li>
+            <li>Quadrilateral</li>
+            <ol type="a">
+                <li>Square</li>
+                <li>Rectangle</li>
+            </ol>
+            <li>Triangle</li>
+        </ol>
+    </body>
+</html>

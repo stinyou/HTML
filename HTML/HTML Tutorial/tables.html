@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--Cell padding is the space between the edge of the cell and the content inside-->
+        <!--Cell spacing is the space between each cell-->
+        <!--Can create a zebra stripes effect by modifying every other row using nth-child(even)-->
+        <!--Can create the same for columns by applying td:nth-child(even) and th:nth-child(even)-->
+        <!--Can create a hover effect when a cell/row is hovered over-->
+        <style>
+            table, th, td {
+                border: 1px solid black;
+                padding: 10px;
+                border-spacing: 6px;
+            }
+            tr:nth-child(even) {
+                background-color: rgba(30,30,120,0.2);
+            }
+            td:nth-child(even), th:nth-child(even) {
+                background-color: rgba(30,30,120,0.2);
+            }
+            tr:hover {
+                background-color:red;
+            }
+            th:hover, td:hover {
+                background-color:orange;
+            }
+        </style>
+    </head>
+    <body>
+        <!--Using a percentage for a style element is relative to the parent; in this case width would be compared to width of <body>-->
+        <table style="width:100%">
+            <tr>
+                <th>Game</th>
+                <td>Minecraft</th>
+                <td>Brawl Stars</th>
+                <td>Bloons TD 6</th>
+            </tr>
+            <tr>
+                <th>Release Year</td>
+                <td>2011</td>
+                <td>2018</td>
+                <td>2018</td>
+            </tr>
+        </table>
+        <!--To avoid double borders, can collaspe double borders into a single border-->
+        <!--Can also set background colours of cells-->
+        <br>
+        <table style="width:100%;border-collapse:collapse;background-color:lightblue;">
+            <tr>
+                <th>Game</th>
+                <td>Minecraft</th>
+                <td>Brawl Stars</th>
+                <td>Bloons TD 6</th>
+            </tr>
+            <tr>
+                <th>Release Year</td>
+                <td>2011</td>
+                <td>2018</td>
+                <td>2018</td>
+            </tr>
+        </table>
+        <!--Can create rounded edges using border-radius-->
+        <br>
+        <table style="width:100%;border-radius:15px;">
+            <tr>
+                <th style="border-radius:15px;">Game</th>
+                <td style="border-radius:15px;">Minecraft</th>
+                <td style="border-radius:15px;">Brawl Stars</th>
+                <td style="border-radius:15px;">Bloons TD 6</th>
+            </tr>
+            <tr>
+                <th style="border-radius:15px;">Release Year</td>
+                <td style="border-radius:15px;">2011</td>
+                <td style="border-radius:15px;">2018</td>
+                <td style="border-radius:15px;">2018</td>
+            </tr>
+        </table>
+        <!--Can use border-style to change the style of the border-->
+        <!--Can use border-color to set the colour of the border-->
+        <br>
+        <table style="width:100%;border-style:dotted;border-color:brown;">
+            <tr>
+                <th>Game</th>
+                <td>Minecraft</th>
+                <td>Brawl Stars</th>
+                <td>Bloons TD 6</th>
+            </tr>
+            <tr>
+                <th>Release Year</td>
+                <td>2011</td>
+                <td>2018</td>
+                <td>2018</td>
+            </tr>
+        </table>
+        <!--Can change the width of different columns by setting the width in <th> or <td> element-->
+        <!--Can change the height of different rows by setting the height in <tr> element-->
+        <br>
+        <table style="width:100%">
+            <tr>
+                <th>Game</th>
+                <td style="width:50%;">Minecraft</th>
+                <td>Brawl Stars</th>
+                <td>Bloons TD 6</th>
+            </tr>
+            <tr style="height:35px">
+                <th>Release Year</td>
+                <td>2011</td>
+                <td>2018</td>
+                <td>2018</td>
+            </tr>
+        </table>
+        <!--To have a table header not centered, must specify the alignment-->
+        <!--To have a table data cell not left-aligned, must specify the alignment-->
+        <br>
+        <table style="width:100%;">
+            <tr>
+                <th style="text-align:left;">First Name</th>
+                <th style="text-align:left;">Last Name</th>
+                <th style="text-align:left;">Age</th>
+            </tr>
+            <tr>
+                <td style="text-align:center;">Justin</td>
+                <td style="text-align:center;">You</td>
+                <td style="text-align:center;">19</td>
+            </tr>
+        </table>
+        <!--Can have a header span multiple columns using colspan attribute-->
+        <!--Can also have a caption for the table using <caption> element, inserted immediately after the <table> tag-->
+        <br>
+        <table style="width:100%;">
+            <caption>People</caption>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Justin</td>
+                <td>You</td>
+                <td>19</td>
+            </tr>
+        </table>
+        <!--Can add padding above, below, left, or right of the content specifically-->
+        <br>
+        <table style="width:100%;">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td style="padding-top:30px;">Justin</td>
+                <td style="padding-bottom:40px;">You</td>
+                <td style="padding-bottom:12px;">19</td>
+            </tr>
+        </table>
+        <!--Can have content span multiple rows and/or columns-->
+        <br>
+        <table style="width:100%;">
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Justin</td>
+                <td>You</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Christopher</td>
+                <td>100</td>
+            </tr>
+        </table>
+        <!--Can add border to specifically the bottom, top, left or right of elements-->
+        <!--
+        Example:
+        tr {
+            border-bottom: 3px solid black;
+        }
+        The above would make horizontal dividers between rows
+        -->
+        <!--Can use <colgroup> and <col> tags to modify columns using span and style attributes-->
+        <!--Should place <colgroup> after a caption element if present, but before everything else-->
+        <!--Could use style="visibility:collapse;" to hide a column-->
+        <br>
+        <table style="width:100%;">
+            <colgroup>
+                <col span="1" style="background-color:green;">
+                <col span="2" style="background-color:pink;">
+            </colgroup>
+            <tr>
+                <th colspan="2">Name</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Justin</td>
+                <td>You</td>
+                <td>19</td>
+            </tr>
+            <tr>
+                <td>Christopher</td>
+                <td>100</td>
+            </tr>
+        </table>
+    </body>
+</html>

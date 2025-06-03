@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>
+            We have already covered many input types in HTML, such as text and submit.<br>
+            The password type is used for passwords.<br>
+            <form>
+                <label for="username">Username:</label><br>
+                <input type="text" id="username" name="username"><br>
+                <label for="pwd">Password:</label><br>
+                <input type="password" id="pwd" name="pwd"><br>
+            </form>
+            The text entered into the password box is hidden (using circles or asterisks).
+            <br>
+            The reset type presents a reset button that can change the fields back to their default values.
+            <form action="some_page.php" target="_blank" autocomplete="on" novalidate>
+                <label for="main dish">Main Dish:</label><br>
+                <input type="text" id="main dish" name="main dish" value="Hamburger"><br>
+                <label for="side dish">Side Dish:</label><br>
+                <input type="text" id="side dish" name="side dish" value="Caesar Salad"><br>
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </form>
+            The color type allows the user to input a colour.
+            <form>
+                <label for="colour">Select a colour:</label>
+                <input type="color" id="colour" name="colour">
+            </form>
+            The date type allows the user to input a date.
+            <form>
+                <label for="random-date">Select a date:</label>
+                <input type="date" id="random-date" name="random-date">
+            </form>
+            Can use min and max attributes to restrict the date:
+            <form>
+                <label for="restricted-date">Select a date between 2000 and 2025:</label>
+                <input type="date" id="restricted-date" name="restricted-date" min="2000-01-01" max="2025-12-31">
+            </form>
+            The datetime-local type allows the user to input a date and time.
+            <form>
+                <label for="time">Select a date and time:</label>
+                <input type="datetime-local" id="time" name="time">
+            </form>
+            The email type allows the user to enter an email address.
+            <form>
+                <label for="email-address">Enter an email address:</label>
+                <input type="email" id="email-address" name="email-address">
+            </form>
+            Can use an image as a submit button using the image type.
+            <form>
+                <label for="email-address">Enter an email address:</label>
+                <input type="email" id="email-address" name="email-address"><br>
+                <input type="image" src="../HTML Tutorial/images/favicon.png" alt="Submit" style="width:40px;height:auto;">
+            </form>
+            The file type allows the user to input a file.
+            <form>
+                <label for="random-file">Enter a file:</label>
+                <input type="file" id="random-file" name="random-file">
+            </form>
+            There are many more forms of input types, such as:
+            <ul>
+                <li>Hidden type</li>
+                <li>Month type</li>
+                <li>Number type</li>
+                <li>Range type</li>
+                <li>Search type</li>
+                <li>Tel type</li>
+                <li>Time type</li>
+                <li>URL type</li>
+                <li>Week type</li>
+            </ul>
+        </p>
+    </body>
+</html>

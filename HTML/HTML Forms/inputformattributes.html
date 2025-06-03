@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>
+            The form attribute describes which form to take of the &lt;input&gt; element.
+            <form id="form1">
+                Select your favourite fruit:<br>
+                <input type="radio" id="fruit1" name="fruit1">
+                <label for="fruit1">Apple</label><br>
+                <input type="radio" id="fruit2" name="fruit2">
+                <label for="fruit2">Orange</label><br>
+                <input type="radio" id="fruit1" name="fruit1">
+                <label for="fruit3">Banana</label><br>
+            </form>
+            The following is still part of the form since the form value matches the above id value:<br>
+            <input type="radio" id="fruit4" name="fruit4" form="form1">
+            <label for="fruit4">Apple</label><br>
+            <br>
+            The formaction attribute provides the URL to send the information to when the form is submitted.
+            This attribute overrides the action attribute of a form element.
+            <form action="overridden.php">
+                Select your favourite fruit:<br>
+                <input type="radio" id="fruit1" name="fruit1">
+                <label for="fruit1">Apple</label><br>
+                <input type="radio" id="fruit2" name="fruit2">
+                <label for="fruit2">Orange</label><br>
+                <input type="radio" id="fruit1" name="fruit1">
+                <label for="fruit3">Banana</label><br>
+                <input type="submit" value="Submit" formaction="some_page.php">
+            </form>
+            <br>
+            The formenctype specifies the type of encoding used when submitted.<br>
+            The formmethod attribute defines the HTTP method used when submitted.<br>
+            The formtarget attribute defines where the response is displayed after submitted.<br>
+            The formnovalidate attribute specifies that the form should not be validated when submitted.<br>
+            The above attributes override their respective parallels of the form attributes.
+        </p>
+    </body>
+</html>

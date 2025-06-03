@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        a:link {
+            color:purple;
+            background-color:transparent;
+            text-decoration:none;
+        }
+        a:visited {
+            color:pink;
+            background-color:transparent;
+            text-decoration:none;
+        }
+        a:hover {
+            color:yellow;
+            background-color:transparent;
+            text-decoration:underline;
+        }
+        a:active {
+            color:orange;
+            background-color:transparent;
+            text-decoration:underline;
+        }
+    </style>
+    <body>
+        <!--Use <a> tag to add hyperlinks, accompanied by the href attribute-->
+        <a href="https://www.google.com">Visit Google's homepage</a> <!--Opens in current tab by default-->
+        <br>
+        <a href="https://www.google.com" target="_self">Visit Google's homepage</a> <!--Opens in current tab-->
+        <a href="https://www.google.com" target="_blank">Visit Google's homepage</a> <!--Opens in new tab-->
+        <a href="https://www.google.com" target="_parent">Visit Google's homepage</a> <!--Opens in the parent frame-->
+        <a href="https://www.google.com" target="_top">Visit Google's homepage</a> <!--Opens in the full body of the window-->
+        <!--Below is a relative link-->
+        <br>
+        <a href="images/Sky Battle 1st Place.png">Sky Battle 1st Place</a>
+        <!--We can also use an image as a link-->
+        <br>
+        <a href="images/Sky Battle 1st Place.png">
+        <img src="images/Sky Battle 1st Place.png" alt="Sky Battle 1st Place Image"  style="width:400px;height:240px;">
+        </a>
+        <!--Link to email-->
+        <br>
+        <a href="mailto:stin.you.03@gmail.com">Send email</a>
+        <!--Button as a link (this requires some JavaScript code)-->
+        <br>
+        <button onclick="document.location='images/Sky Battle 1st Place.png'">Sky Battle 1st Place</button>
+        <!--Can use title to give extra information when hovered over-->
+        <br>
+        <button onclick="document.location='images/Sky Battle 1st Place.png'" title="View screenshot of Sky Battle 1st Place">Sky Battle 1st Place</button>
+        <!--Can also style a link as a button using CSS, but will come back to this later-->
+        <!--Can create bookmarks which are useful if the page is very long, it will scroll up or down to it (or can go to different page)-->
+        <br>
+        <a href="#BP">Scroll to bottom of page</a>
+        <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+        <hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr><hr>
+        <h6 id="BP" style="text-align:center">Bottom of Page</h2>
+    </body>
+</html>

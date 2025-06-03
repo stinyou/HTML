@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>
+            The &lt;video&gt; element is used to play video files in HTML.<br>
+            <video style="width:300;height:200;display:block;margin:auto;" controls>
+                <source src="media/starblast1.mp4" type="video/mp4">
+                <!--<source src="media/starblast1.ogg" type="video/ogg">-->
+                Your browser does not support videos.
+            </video><br>
+            The controls attribute adds video controls to the video.<br>
+            To start a video automatically, can use the autoplay attribute.<br>
+            In many browsers, you need the video to be muted to allow autoplay, so use the muted attribute for this.<br>
+            <video style="width:300;height:200;" autoplay muted>
+                <source src="media/starblast1.mp4" type="video/mp4">
+                Your browser does not support videos.
+            </video>
+        </p>
+    </body>
+</html>

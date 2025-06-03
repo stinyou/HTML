@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>
+            We have already covered the &lt;input&gt; and &lt;label&gt; elements.<br>
+            Next, the &lt;select&gt; element is used to display a drop-down list.<br>
+            <form>
+                <label for="fruit">Select your favourite fruit:</label>
+                <select id="fruit" name="fruit">
+                    <option value="Apple">Apple</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Banana">Banana</option>
+                    <option value="Other">Other</option>
+                </select>
+            </form>
+            By default, the first value in the drop-down list is the one automatically selected.<br>
+            To change this, add the selected attribute to the one you would like to be the automatic.<br>
+            <form>
+                <label for="fruit">Select your favourite fruit:</label>
+                <select id="fruit" name="fruit">
+                    <option value="Apple">Apple</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Banana" selected>Banana</option>
+                    <option value="Other">Other</option>
+                </select>
+            </form>
+            Can use the size attribute to specify how many visible values to be shown.<br>
+            <form>
+                <label for="fruit">Select your favourite fruit:</label>
+                <select id="fruit" name="fruit" size="4">
+                    <option value="Apple">Apple</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Banana" selected>Banana</option>
+                    <option value="Other">Other</option>
+                </select>
+            </form>
+            Can use the multiple attribute so that the user can select multiple values.<br>
+            <form>
+                <label for="fruit">Select your favourite fruit:</label>
+                <select id="fruit" name="fruit" multiple>
+                    <option value="Apple">Apple</option>
+                    <option value="Orange">Orange</option>
+                    <option value="Banana">Banana</option>
+                    <option value="Other">Other</option>
+                </select>
+            </form>
+            The user must use <kbd>Ctrl</kbd> + click to select multiple values.<br>
+            Can use the &lt;textarea&gt; element to provide a larger input field.<br>
+            <form>
+                <textarea name="paragraph" rows="10" cols="40">Default message.</textarea>
+            </form>
+            <form>
+                <textarea name="paragraph" style="width:300px;height:200px;">Default message.</textarea>
+            </form>
+            The &lt;button&gt; element is used to provide a clickable button.<br>
+            <button type="button" onclick="alert('Welcome')">Button</button><br>
+            Can use &lt;fieldset&gt; to group related elements and &lt;legend&gt; to provide a caption.<br>
+            <form action="some_page.php">
+                <fieldset>
+                    <legend>Dinner:</legend>
+                    <label for="main dish">Main Dish:</label><br>
+                    <input type="text" id="main dish" name="main dish" value="Hamburger"><br>
+                    <label for="side dish">Side Dish:</label><br>
+                    <input type="text" id="side dish" name="side dish" value="Caesar Salad"><br>
+                    <input type="submit" value="Submit">
+                </fieldset>
+            </form>
+            Can give users pre-defined options using &lt;datalist&gt;
+            <form>
+                <input list="provinces">
+                <datalist id="provinces">
+                    <option value="Ontario"></option>
+                    <option value="Quebec"></option>
+                    <option value="Other"></option>
+                </datalist>
+            </form>
+        </p>
+    </body>
+</html>

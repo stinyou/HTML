@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!--The <img> tag has two required attributes: src and alt-->
+        <!--Can use style attribute to modify width and height or just width and height attributes-->
+        <img src="images/Sky Battle 1st Place.png" alt="Sky Battle 1st Place" style="width:200px;height:140px;">
+        <img src="images/Sky Battle 1st Place.png" alt="Sky Battle 1st Place" width="200px" height="140px">
+        <!--src can have a destination that is at another website, be careful of copyright laws-->
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt="W3Schools.com">
+        <!--Recall image as a link-->
+        <a href="images/Sky Battle 1st Place.png"><img src="images/Sky Battle 1st Place.png" alt="Sky Battle First Place" style="width:200px;height:140px;"></a>
+        <!--You can make images float to the right or left of text-->
+        <br>
+        <p>Hello World
+        <img src="images/Sky Battle 1st Place.png" alt="Sky Battle 1st Place" style="float:right;width:20px;height:14px;">
+        </p>
+        <p>Hello World
+        <img src="images/Sky Battle 1st Place.png" alt="Sky Battle 1st Place" style="float:left;width:20px;height:14px;">
+        </p>
+        <p>Below is an example of an image map:<br>
+            You can click the character to go to Google's homepage, or the medal to go to Google images</p>
+        <img src="images/Sky Battle 1st Place.png" alt="Sky Battle 1st Place" usemap="#imagemap" style="width:800px;height:400px">
+        <map name="imagemap">
+            <area shape="rect" coords="390,150,420,170" href="https://www.google.com">
+            <area shape="circle" coords="420,200,50" href="https://images.google.ca">
+        </map>
+        <!--Can also have it execute a JavaScript function when the area is clicked, more on that later-->
+        <!--Can add backgroud images to elements as follows-->
+        <p style="background-image:url('images/Sky Battle 1st Place.png');background-repeat:no-repeat;background-size:cover;background-attachment:fixed;">
+            Hello World<br><br><br><br><br><br><br><br><br><br><br><br>Background image in this paragraph</p>
+        <p style="background-image:url('images/Sky Battle 1st Place.png');background-repeat:no-repeat;background-size:100%100%;">
+            Hello World<br><br><br><br><br><br><br><br><br><br><br><br>Background image in this paragraph</p>
+        <p style="background-image:url('images/Sky Battle 1st Place.png');background-repeat:no-repeat;background-attachment:fixed;background-size:100%100%;">
+            Hello World<br><br><br><br><br><br><br><br><br><br><br><br>Background image in this paragraph</p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <!--The picture element is used to suit different screen sizes-->
+        <!--Make sure that the <img> tag is the last child used-->
+        <!--NOTE: srcset attribute uses whitespace for some other meaning, thus identify a space with %20-->
+        <picture>
+            <source media="(min-width:3000px)" srcset="images/First%20Speedrun.png">
+            <source media="(min-width:400px)" srcset="images/8%20Kill%20Battle%20Box.png">
+            <img src="images/Sky%20Battle%201st%20Place.png">
+        </picture>
+        <!--Putting 3 images side by side-->
+        <br><br>
+        <img href="images/8 Kill Battle Box.png" style="float:left;width:30%;height:100px;margin-right:5%;">
+        <img href="images/8 Kill Battle Box.png" style="float:left;width:30%;height:100px">
+        <img href="images/8 Kill Battle Box.png" style="float:right;width:30%;height:100px">
+    </body>
+</html>

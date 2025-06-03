@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--It is important to create webpages that work well on all devices-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <!--Responsive images scale well to fit any screen size-->
+        <img src="images/8 Kill Battle Box.png" style="width:100%">
+        <!--The image will scale up and down to fit any browser-->
+        <!--However, this can cause the image to be larger than the original-->
+        <!--It may be the preferred option to use the max-width property instead-->
+        <img src="images/8 Kill Battle Box.png" style="max-width:100%;height:auto;">
+        <!--Here, the image will scale down to fit a browser but never up, so the image is never larger than the original-->
+        <!--Can use the picture element to show different images for different browser sizes-->
+        <picture>
+            <source srcset="images/8%20Kill%20Battle%20Box.png" media="(max-width: 600px)">
+            <source srcset="images/First%20Speedrun.png" media="(max-width: 1000px)">
+            <source srcset="images/Sky%20Battle%201st%20Place.png">
+            <img src="images/First Speedrun.png">
+        </picture>
+        <!--Responsive text scales with the browser as well, describing font size in viewport width instead of pixels-->
+        <!--3vw is 3% of the viewport width-->
+        <h1 style="font-size:8vw">This Is A Header</h1>
+        <p style="font-size:3vw;">This is a paragraph.</p>
+        <h1>This Is A Header</h1>
+        <p>This is a paragraph.</p>
+        <!--Can use media queries to completely change the webpage design depending on browser size-->
+        <!--Can also use CSS frameworks like W3.CSS and Bootstrap for responsive web design-->
+        <!--More on this when learning CSS-->
+    </body>
+</html>

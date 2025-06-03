@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>
+            The &lt;form&gt; element is used to present a form for user input.
+            The most common element used is &lt;input&gt;, and the display changes based on the type attribute.
+            <br><br>Examples:<br>
+            <ul>
+                <li><form><input type="text"></form></li>
+                <li><form><input type="radio"></form></li>
+                <li><form><input type="checkbox"></form></li>
+                <li><form><input type="submit"></form></li>
+                <li><form><input type="button"></form></li>
+            </ul>
+            Can use the &lt;label&gt; tag to label form elements.
+            <br><br>Examples:<br><br>
+            <form>
+                <label for="sport">Enter a sport:</label><br>
+                <input type="text" id="sport" name="sport">
+            </form>
+            <br>
+            <form>
+                Choose your favourite shape:<br>
+                <input type="radio" id="square" name="fav-shape" value="Square">
+                <label for="square">Square</label>
+                <input type="radio" id="triangle" name="fav-shape" value="Triangle">
+                <label for="triangle">Triangle</label>
+                <input type="radio" id="circle" name="fav-shape" value="Circle">
+                <label for="circle">Circle</label>
+            </form>
+            <br>
+            <form>
+                Choose the shapes you like:<br>
+                <input type="checkbox" id="shape1" name="shape1" value="Square">
+                <label for="shape1">Square</label>
+                <input type="checkbox" id="shape2" name="shape2" value="Triangle">
+                <label for="shape2">Triangle</label>
+                <input type="checkbox" id="shape3" name="shape3" value="Circle">
+                <label for="shape3">Circle</label>
+            </form>
+            <br>
+            The submit form requires a form-handler to process submitted input using a script.
+            The name value is the part that is submitted to the script.
+            <br><br>
+            <form action="/some_page.php">
+                Choose the shapes you like:<br>
+                <input type="checkbox" id="shape1" name="shape1" value="Square">
+                <label for="shape1">Square</label>
+                <input type="checkbox" id="shape2" name="shape2" value="Triangle">
+                <label for="shape2">Triangle</label>
+                <input type="checkbox" id="shape3" name="shape3" value="Circle">
+                <label for="shape3">Circle</label>
+                <br><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+        </p>
+    </body>
+</html>

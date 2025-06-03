@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <!--<div> is used as a container for other HTML elements-->
+        <!--<div> is a block element-->
+        <p>Hello <div>Wow</div>World</p>
+        <!--Used to section off groups of elements-->
+        <div style="background-color:azure;text-align:center;">
+            <h2>This is a heading</h2>
+            <p>This is a paragraph</p>
+        </div>
+        <div style="background-color:yellow;width:80%;">
+            <h2>This is a heading</h2>
+            <p>This is a paragraph</p>
+        </div>
+        <div style="background-color:yellow;width:80%;margin:auto;">
+            <h2>This is a heading</h2>
+            <p>This is a paragraph</p>
+        </div>
+        <div style="float:left;width:33%;background-color:pink;text-align:center;">
+            <p>Hello World</p>
+        </div>
+        <div style="float:left;width:33%;background-color:purple;text-align:center;">
+            <p>Hello World</p>
+        </div>
+        <div style="float:left;width:33%;background-color:blue;text-align:center;">
+            <p>Hello World</p>
+        </div>
+        <!--Can change <div> to be an inline element-->
+        <p>Hello <div style="display:inline-block;">Wow</div>World</p>
+        <!--Can use flex instead of float to keep containers side by side-->
+        <div style="display:flex;">
+            <div>Hello World</div>
+            <div>Hello World</div>
+            <p>Hello World</p>
+            <div>Hello World</div>
+        </div>
+        <!--Can use grid as well-->
+        <div style="display:grid;grid-template-columns:50%50%;background-color:orange;">
+            <div>Hello</div>
+            <div>World</div>
+        </div>
+    </body>
+</html>

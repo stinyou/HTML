@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <p>
+            We have already seen some attributes for the input element, like type, id, name, and value.
+            The readonly attribute means that the input cannot be modified by the user.
+            The input is still sent when the form is submitted.
+            <form action="some_page.php">
+                <label for="main dish">Main Dish:</label><br>
+                <input type="text" id="main dish" name="main dish" value="Hamburger" readonly><br>
+                <label for="side dish">Side Dish:</label><br>
+                <input type="text" id="side dish" name="side dish" value="Caesar Salad"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            The disabled attribute makes an input field unmodifiable and unclickable.
+            The input is not sent when the form is submitted.
+            <form action="some_page.php">
+                <label for="main dish">Main Dish:</label><br>
+                <input type="text" id="main dish" name="main dish" value="Hamburger" disabled><br>
+                <label for="side dish">Side Dish:</label><br>
+                <input type="text" id="side dish" name="side dish" value="Caesar Salad"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            The size attribute defines the width of the input field, in characters.
+            It only works on certain input types.
+            <form action="some_page.php">
+                <label for="main dish">Main Dish:</label><br>
+                <input type="text" id="main dish" name="main dish" value="Hamburger" size="30"><br>
+                <label for="side dish">Side Dish:</label><br>
+                <input type="text" id="side dish" name="side dish" value="Caesar Salad"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            The maxlength attribute defines a maximum number of characters the user can input.
+            The user is not notified of this without the help of JavaScript.
+            <form action="some_page.php">
+                <label for="main dish">Main Dish:</label><br>
+                <input type="text" id="main dish" name="main dish" value="Hamburger" maxlength="10"><br>
+                <label for="side dish">Side Dish:</label><br>
+                <input type="text" id="side dish" name="side dish" value="Caesar Salad"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            The min and max attributes set a minimum and maximum value for the input field.
+            This only works with certain input types.
+            <form>
+                <label for="restricted-date">Select a date between 2000 and 2025:</label>
+                <input type="date" id="restricted-date" name="restricted-date" min="2000-01-01" max="2025-12-31">
+            </form>
+            <br>
+            The pattern attribute specifies a form the input must follow, checked against when submitted.
+            <form>
+                <label for="four-digit-PIN">PIN:</label>
+                <input type="password" id="four-digit-PIN" name="four-digit-PIN" pattern="[0-9]{4}" title="4 digit PIN">
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            The placeholder attribute specifies a hint at what form the input should follow.
+            <form>
+                <label for="contact">Enter a phone number:</label>
+                <input type="tel" id="contact" name="contact" placeholder="123-456-7890">
+            </form>
+            <br>
+            The required attribute means the field must be filled out before submitting a form.
+            <form action="some_page.php">
+                <label for="main dish">Main Dish:</label><br>
+                <input type="text" id="main dish" name="main dish" value="Hamburger" required><br>
+                <label for="side dish">Side Dish:</label><br>
+                <input type="text" id="side dish" name="side dish" value="Caesar Salad" required><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            The step attribute defines intervals of acceptable values for a field.
+            <form>
+                <label for="even-number">Enter an even number:</label>
+                <input type="number" id="even-number" name="even-number" step="2">
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            The autofocus attribute defines a field that should automatically get focused on when loading the page.
+            <form action="some_page.php">
+                <label for="main dish">Main Dish:</label><br>
+                <input type="text" id="main dish" name="main dish" value="Hamburger" autofocus><br>
+                <label for="side dish">Side Dish:</label><br>
+                <input type="text" id="side dish" name="side dish" value="Caesar Salad"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+        </p>
+    </body>
+</html>

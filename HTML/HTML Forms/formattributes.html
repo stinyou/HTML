@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <p>
+            The action attribute gives the action that should be performed when the form is submitted.<br>
+            <form action="some_page.php">
+                <label for="main dish">Main Dish:</label><br>
+                <input type="text" id="main dish" name="main dish" value="Hamburger"><br>
+                <label for="side dish">Side Dish:</label><br>
+                <input type="text" id="side dish" name="side dish" value="Caesar Salad"><br>
+                <input type="submit" value="Submit">
+            </form>
+            If there is no action attribute, then the action is performed on the current page.<br>
+            <br>
+            In the following example, the submitted result will open in a new browser tab.<br>
+            <form action="some_page.php" target="_blank">
+                <label for="main dish">Main Dish:</label><br>
+                <input type="text" id="main dish" name="main dish" value="Hamburger"><br>
+                <label for="side dish">Side Dish:</label><br>
+                <input type="text" id="side dish" name="side dish" value="Caesar Salad"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            You can used HTTP methods like get and post when submitting data.<br>
+            <br>
+            You can have a form autocomplete based on previous answers.<br>
+            <form action="some_page.php" target="_blank" autocomplete="on">
+                <label for="main dish">Main Dish:</label><br>
+                <input type="text" id="main dish" name="main dish" value="Hamburger"><br>
+                <label for="side dish">Side Dish:</label><br>
+                <input type="text" id="side dish" name="side dish" value="Caesar Salad"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+            Lastly, you can include a novalidate attribute that, when on, will not validate the information submitted.
+            <form action="some_page.php" target="_blank" autocomplete="on" novalidate>
+                <label for="main dish">Main Dish:</label><br>
+                <input type="text" id="main dish" name="main dish" value="Hamburger"><br>
+                <label for="side dish">Side Dish:</label><br>
+                <input type="text" id="side dish" name="side dish" value="Caesar Salad"><br>
+                <input type="submit" value="Submit">
+            </form>
+            <br>
+        </p>
+    </body>
+</html>

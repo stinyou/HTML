@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!--The <head> is a container for <title>, <style>, <meta>, <link>, <script>, and <base>-->
+        <title>Meaningful Title</title>
+        <style>
+            h1 {text-align:center;background-color:turquoise;}
+            p {font-family:Calibri;background-color:lightskyblue;}
+        </style>
+        <!--<link rel="stylesheet" href="stylesheet.css">-->
+        <!--The <meta> element is usually used to provide data to the browser to help it provide better service to users-->
+        <meta charset="UTF-8">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="description" content="head element practice">
+        <meta name="author" content="Justin You">
+        <!--Should include the following on ALL pages-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--the <script> element is used to include client-side JavaScripts, more on this later-->
+        <!--the <base> element defines the default target URL for all links in a page-->
+        <base href="https://www.w3schools.com/" target="_blank">
+        <!--target="_blank" causes links to open in a new window-->
+    </head>
+    <body>
+        <h1>This Is A Header</h1>
+        <p>This is a paragraph.</p>
+        <!--Example from W3Schools: since the base URL is their website, the relative links
+        start from the website-->
+        <img src="images/stickman.gif" width="20" height="30">
+        <a href="tags/tag_base.asp">HTML base tag</a>
+        <!--Thus, the following would not work anymore-->
+        <img src="images/8 Kill Battle Box.png" alt="Oops, wrong base URL">
+    </body>
+</html>
